@@ -20,3 +20,6 @@
 1. 本地训练，运行python Train_Model.py，模型保存在data/model_infer/
 2. 线上训练 https://aistudio.baidu.com/aistudio/index
 
+## 小车自主驾驶
+1. 在那之前可以使用Driver_self_use_data.py进行测试
+2. 直接运行Driver_self.py
