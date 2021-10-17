@@ -3,3 +3,4 @@
 '''
 import paddlex as pdx
 
+model = pdx.load_model('model/PP-YOLO Tiny/Fall/best_model')
