@@ -1,5 +1,7 @@
 '''
 在运行Auto_Driver.py之前可以使用该程序进行目标识别的测试
+更新1：
+    加入读取得分最高的标记的功能，并显示
 '''
 import sys
 import time
@@ -7,7 +9,7 @@ import paddlex as pdx
 import cv2
 
 # 加载模型
-model = pdx.load_model('model/PP-YOLO Tiny/TrafficSigns/best_model')
+model = pdx.load_model('model/PP_YOLO_Tiny/TrafficSigns/best_model')
 cap  = cv2.VideoCapture(0)
 
 while True:
