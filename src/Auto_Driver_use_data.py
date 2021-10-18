@@ -125,14 +125,20 @@ def lane():
 def sign_PPYoloTiny():
     global vel
     global angle
-    model = pdx.load_model('model/PP-YOLO Tiny/TrafficSigns/best_model')
+    model = pdx.load_model('model/PP_YOLO_Tiny/TrafficSigns/best_model')
     cap = cv2.VideoCapture(0)
 
     while True:
         ret, frame = cap.read()
         if ret == True:
             time_begin = time.time()
-            result = model.predict(frame)
+            result = model.predict(frame) # 预测
+            # 取最高得分的label
+            for id in result:
+                pass
+            # 针对最高得分的进行相关的标记
+
+            # 显示
 
 def sign():
     global vel
