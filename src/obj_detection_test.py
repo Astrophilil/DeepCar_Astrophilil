@@ -7,7 +7,7 @@ import paddlex as pdx
 import cv2
 
 # 加载模型
-model = pdx.load_model('model/PP-YOLO Tiny/Fall/best_model')
+model = pdx.load_model('model/PP-YOLO Tiny/TrafficSigns/best_model')
 cap  = cv2.VideoCapture(0)
 
 while True:
@@ -20,7 +20,7 @@ while True:
         frequency = round((1 / time_cost), 3)       # 预测频率
         img = pdx.det.visualize(frame, result, threshold=0.5, save_dir=None)
         text = 'frequency: ' + str(frequency) + 'Hz'
-        img = cv2.putText(img, text, (100, 100), cv2.FONT_HERSHEY_DUPLEX, 0.75, (0,0,0), 1)
+        img = cv2.putText(img, text, (50, 50), cv2.FONT_HERSHEY_DUPLEX, 0.5, (0,0,0), 1)
         cv2.imshow('img', img)
         if cv2.waitKey(1) == 27:
             cv2.destroyAllWindows()

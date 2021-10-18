@@ -43,7 +43,7 @@
 1. 将训练好的模型保存之model的相应文件夹中
 2. 运行obj_detection_test.py
 
-## 部署
+## 自主驾驶
 1. 拷贝相应的模型文件到本地
-2. 测试识别效果，运行obj_detection.py
+2. 测试识别效果，运行obj_detection_test.py
 3. 自主驾驶
