@@ -9,7 +9,7 @@ import paddlex as pdx
 import cv2
 
 # 加载模型
-predictor = pdx.deploy.Predictor('inference_model/inference_model')
+predictor = pdx.deploy.Predictor('inference_model/inference_model/inference_model')
 result_ = predictor.predict(img_file='data_obj/images/1_cancel_10_1.jpg',warmup_iters=100, repeats=100)
 pdx.det.visualize('data_obj/images/1_cancel_10_1.jpg', result_, save_dir='./')
 #model = pdx.load_model('model/PP_YOLO_Tiny/TrafficSigns/best_model')
